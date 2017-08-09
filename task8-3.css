@@ -17,13 +17,13 @@ body {
 .icon img {
     width: 1.2rem;
 }
-nav {
+.big {
     padding:0 15%;
     height: 5rem;
     background: #29b078;
     box-sizing: border-box;
 }
-nav ul{
+.big ul{
     display: inline-block;
     float: right;
     list-style: none;
@@ -31,41 +31,51 @@ nav ul{
     padding: 0;
     color: #fff;
 }
-nav li {
+.big li {
     height: 5rem;
     display: inline-block;
     line-height: 5rem;
     padding: 0 1.5rem;
     font-size: 1rem;
 }
-@media all and (max-width: 500px){
-    nav li {
-        height: 5rem;
-        display: inline-block;
-        line-height: 5rem;
-        float: right;
-        padding: 0 1rem;
-        font-size: 0.8rem;
-    }
-}
-nav li:hover{
+.big li:hover{
     border-bottom: 0.3rem solid #fff;
     box-sizing: border-box;
 }
-nav a {
+.big a {
     color: #FFFFFF;
 }
-nav a:hover {
+.big a:hover {
     text-decoration: none;
     color: #FFFFFF;
 }
 .career {
     border-bottom: 0.3rem solid #fff;
 }
-nav img {
+.big img {
     position: relative;
     top :50%;
     margin-top: -1.5rem;
+}
+.navbar-header {
+    background: #29b078;
+}
+.navbar-collapse {
+    background: #29b078;
+}
+.navbar-collapse a {
+    text-align: center;
+    color: #FFFFFF!important;
+}
+@media all and (max-width: 768px){
+    .big {
+        display: none;
+    }
+}
+@media all and (min-width: 768px) {
+    .small {
+        display: none;
+    }
 }
 main {
     background: #fafafa;
